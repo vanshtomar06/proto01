@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Kavach</title>
+    <link rel="stylesheet" href="/css/setting.css">
+</head>
+<body>
+    <header>
+        <h1>Kavach - Settings</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="log-in.html">Profile</a></li>
+                <li><a href="" class="active">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+
+            <label for="theme-toggle">Dark Theme</label>
+            <input type="checkbox" id="theme-toggle">
+
+
+            <h2>Profile Settings</h2>
+            <form action="update_profile.php" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <h3>Change Password</h3>
+                <label for="current-password">Current Password:</label>
+                <input type="password" id="current-password" name="current-password" required>
+
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password" required>
+
+                <label for="confirm-password">Confirm New Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <h3>Notification Settings</h3>
+                <label for="email-notifications">Email Notifications:</label>
+                <input type="checkbox" id="email-notifications" name="email-notifications">
+
+                <label for="sms-notifications">SMS Notifications:</label>
+                <input type="checkbox" id="sms-notifications" name="sms-notifications">
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="/js/setting.js"></script>
+</body>
+</html>

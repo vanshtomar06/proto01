@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light theme background */
+    color: #333; /* Light theme text color */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    background-color: #1c1c1c; /* Dark theme background */
+    color: #f9f9f9; /* Dark theme text color */
+}
+
+header {
+    background-color: #fff; /* Light theme header */
+    padding: 10px 20px;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+body.dark-theme header {
+    background-color: #333; /* Dark theme header */
+}
+
+h1 {
+    color: skyblue;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Light theme link color */
+}
+
+body.dark-theme nav ul li a {
+    color: #f9f9f9; /* Dark theme link color */
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    background-color: white; /* Light theme form */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme form {
+    background-color: #444; /* Dark theme form */
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    background-color: white; /* Light theme button */
+    color: skyblue;
+    border: 1px solid skyblue;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+body.dark-theme form button {
+    background-color: #555; /* Dark theme button */
+    color: white;
+}
+
+form button:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+body.dark-theme form button:hover {
+    background-color: #007bb5; /* Dark theme button hover */
+}
+
+

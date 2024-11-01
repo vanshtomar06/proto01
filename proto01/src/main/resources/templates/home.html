@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAVACH</title>
+    <link rel="stylesheet" href="/src/main/resources/static/css/home.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+    <header>
+        <div class="container">
+            <div class="image-left">
+                <img src="/src/main/resources/static/assets/logo.png" alt="Image 1">
+            </div>
+            <div class="image-center">
+                <img src="/src/main/resources/static/assets/head.png" alt="Image 2">
+            </div>
+            <div class="image-right">
+                <img src="/src/main/resources/static/assets/Safe1.png" alt="Image 3">
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <!-- Clickable Icon or Logo on the left -->
+        <div class="naam">
+            Kavach
+        </div>
+
+        <!-- Buttons on the right -->
+        <div class="navbar-buttons">
+
+            <button class="c-button c-button--gooey" onclick="openMap()">Map
+                <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+
+            <button class="c-button c-button--gooey" onclick="scrollToAbout()">About Us
+                <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+
+            <button class="c-button c-button--gooey">Red Zone
+                <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+
+            <button class="c-button c-button--gooey" onclick="scrollToContact()">Contact
+                <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+
+            <!-- Profile Button with Dropdown Menu -->
+            <div class="profile-menu-container">
+                <button class="profile-button">
+                    <img src=" /src/main/resources/static/assets/profile.png" alt="Profile" class="profile-icon">
+                </button>
+                <div class="profile-menu">
+                    <a th:href="@{/log-in.html}">Profile</a>
+                    <a th:href="@{/settings.html}">Settings</a>
+                    <a href="#logout">Logout</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section-left">
+        <div class="hero-section-heading hero-section-sub-heading">
+            <span class="role"></span>
+        </div>
+    </div>
+
+    <!-- Report Incident Section -->
+    <section class="report-incident-section">
+        <div class="report-content">
+            <h2>Have an Issue? Report it Now!</h2>
+            <p>Your safety is our priority. If you encounter any suspicious or harmful activities, report it immediately, and we'll take prompt action.</p>
+            <!-- <a href="#report-form" class="report-incident-button">Report an Incident</a> -->
+            <button class="report-incident-button">Report an Incident</button>
+        </div>
+    </section>
+
+
+    <section id="features" class="features-section">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <img src="/assets/alert.png" alt="Instant Alerts">
+                <h3>Instant Alerts</h3>
+                <p>Send immediate alerts to your family and local authorities when you feel unsafe.</p>
+            </div>
+            <div class="feature">
+                <img src="/assets/location.png" alt="Live Location Sharing">
+                <h3>Live Location Sharing</h3>
+                <p>Share your live location with trusted contacts to ensure your safety on the go.</p>
+            </div>
+            <div class="feature">
+                <img src="/assets/location.png" alt="Area Monitoring">
+                <h3>Area Monitoring</h3>
+                <p>Stay informed about safe and unsafe areas based on reports from other users.</p>
+            </div>
+            <div class="feature">
+                <img src="/assets/contact.jpg" alt="Emergency Contacts">
+                <h3>Emergency Contacts</h3>
+                <p>Easily access and alert your emergency contacts with one tap during critical situations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+
+    <section id="map" class="map-section">
+        <h2>Color-Coded Safety Zones</h2>
+        <p>Our interactive map categorizes areas based on the number of safety reports, ensuring you are always informed:</p>
+        <div class="color-coding">
+            <div class="color-code-wrapper">
+                <span class="color-code danger"></span>
+                <span class="laal"><strong>Red:</strong>  High-risk areas; proceed with caution.</span>
+            </div>
+            <div class="color-code-wrapper">
+                <span class="color-code warning"></span>
+                <strong>Orange:</strong>  Moderate risk; stay alert.
+            </div>
+            <div class="color-code-wrapper">
+                <span class="color-code caution"></span>
+                <strong>Yellow:</strong> Low risk; caution advised.
+            </div>
+        </div>
+        <p>Use our color-coded map to plan your routes and stay safe.</p>
+    </section>
+
+
+
+
+
+    <!-- About Us Section -->
+
+    <section id="about-us" >
+        <h1>About Us</h1>
+        <div class="slider-container">
+            <!-- Left Arrow -->
+            <div class="arrow left-arrow" onclick="changeSlide(-1)">&#10094;</div>
+
+            <!-- Slides Container -->
+            <div class="slides">
+                <div class="slide active">
+                    <h2>Our Mission</h2>
+                    <p>Kavach is committed to empowering women by ensuring they feel safe and supported in their daily lives through our technology platform.</p>
+                </div>
+                <div class="slide">
+                    <h2>Our Vision</h2>
+                    <p>We envision a world where women can live without fear of harassment, assault, or intimidation, and can reach their full potential.</p>
+                </div>
+                <div class="slide">
+                    <h2>Our Story</h2>
+                    <p>Kavach was founded by individuals dedicated to addressing the complex safety needs of women in today's society through innovation.</p>
+                </div>
+                <div class="slide">
+                    <h2>Our Platform</h2>
+                    <p>Real-time location sharing, quick incident reporting, and map-based safety alerts are key features of our platform.</p>
+                </div>
+            </div>
+
+            <!-- Right Arrow -->
+            <div class="arrow right-arrow" onclick="changeSlide(1)">&#10095;</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to us anytime.</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script>
+    var typeData = new Typed(".role", {
+        strings: [
+            "Your Experience, Our Mission",
+            "Ensuring Your Safety, Anytime, Anywhere.",
+            "Stay Safe, Stay Connected",
+            "Alert. Act. Stay Safe",
+            "Empowering Women, Ensuring Safety",
+        ],
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 40,
+        backDelay: 1000,
+    });
+
+    // JavaScript to toggle the profile menu
+    document.querySelector('.profile-button').addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent event from bubbling up
+        var menu = document.querySelector('.profile-menu');
+        menu.classList.toggle('show');
+    });
+
+    // Close the profile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        var menu = document.querySelector('.profile-menu');
+        var profileButton = document.querySelector('.profile-button');
+        if (!profileButton.contains(e.target) && !menu.contains(e.target)) {
+            menu.classList.remove('show');
+        }
+    });
+</script>
+<script src="/js/home.js"></script>
+</body>
+</html>

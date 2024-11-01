@@ -1,0 +1,114 @@
+/* Common Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://img.freepik.com/free-vector/decorative-tricolor-indian-flag-theme-texture_1055-7757.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1726704000&semt=ais_hybrid') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Style */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form Wrapper Style */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Glassy Effect for Forms */
+.login-form, .signup-form {
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px; /* Increased width for more space */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Glass effect */
+    text-align: center;
+    margin: auto; /* Center the form */
+}
+
+/* Header Style */
+h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #FF9933; /* Saffron color */
+}
+
+/* Label and Input Style */
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 1em;
+    color: #138808; /* Green color */
+    font-weight: bold; /* Make text bold */
+}
+
+input, select {
+    width: calc(100% - 22px); /* Adjust width for padding */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #138808; /* Green border */
+    border-radius: 8px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    color: #333; /* Dark text color */
+}
+
+/* Button Style */
+button {
+    background: #FF9933; /* Saffron color */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #e68a00; /* Darker shade of saffron */
+}
+
+/* Error Message Style */
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: -10px;
+}
+
+/* Link Style */
+a {
+    color: #138808; /* Green color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sign Up Link Style */
+.signup-link {
+    margin-top: 15px;
+}
+
+.signup-link a{
+    cursor: pointer;
+}
